@@ -1,5 +1,5 @@
 import './style.css'
-import Siderbar from '@/components/Siderbar'
+import Sidebar from '@/components/Sidebar'
 
 const RootLayout = async ({ children }) => {
   return (
@@ -7,7 +7,7 @@ const RootLayout = async ({ children }) => {
       <body>
         <div className='container'>
           <div className='main'>
-            <Siderbar />
+            <Sidebar />
             <section className='col note-viewer'>{children}</section>
           </div>
         </div>
