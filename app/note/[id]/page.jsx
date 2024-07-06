@@ -3,10 +3,6 @@ import Note from '@/components/Note'
 
 export default async function Page({ params }) {
     const noteId = params.id
-
-    // 为了让 Suspense 的效果更明显
-    const sleep = ms => new Promise(r => setTimeout(r, ms));
-    await sleep(1000);
     const note = await getNote(noteId)
 
     if (!note) {
@@ -20,7 +16,7 @@ export default async function Page({ params }) {
     }
 
     return (
-        <Note note={note} />
+        <Note noteId={noteId} note={note} />
     )
 
 }
