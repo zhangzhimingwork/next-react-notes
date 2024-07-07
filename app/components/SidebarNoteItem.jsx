@@ -1,7 +1,7 @@
 import SidebarNoteItemContent from './SidebarNoteItemContent'
 import SidebarNoteItemHeader from './SidebarNoteItemHeader'
 
-export default async function SiderbarNoteItem({ noteId, note }) {
+export default function SiderbarNoteItem({ noteId, note }) {
     const { title, content = '', updateTime } = note;
 
     return (
